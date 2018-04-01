@@ -161,7 +161,7 @@
 
         <div class="agency col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1">
 
-        <p>Lalta Prasad Singh Institute of Technology, part of Kiran Siksha Seva Samiti, started with an Industrial Training Institute in the year 2012 and now adding a polytechnic college to its basket. where,  extraordinary faculty and students seek answers to complex questions, discover new knowledge, lead innovation, and transform our future. LPSIT is a place of extraordinary interactions. It's a setting where people and ideas come together in new ways—illuminating mysteries, making sparks fly, and fostering intellectual breakthroughs.</p>
+        <p>Lalta Prasad Singh Institute of Technology, part of Kiran Siksha Seva Samiti, is a polytechnic college with  extraordinary faculty and students who seek answers to complex questions, discover new knowledge, lead innovation, and transform our future. LPSIT is a place of extraordinary interactions. It's a setting where people and ideas come together in new ways—illuminating mysteries, making sparks fly, and fostering intellectual breakthroughs.</p>
 
         <p>The mission of our institute is to expand human knowledge and benefit society. We educate our students to become creative members of society.  The Institute is committed to generating, disseminating, and preserving knowledge, and to working with others to bring this knowledge to bear on the world's great challenges. LPSIT is dedicated to providing its students with an education that combines rigorous academic study and the excitement of discovery with the support and intellectual stimulation of a diverse campus community. We seek to   develop in each member of the LPSIT community the ability and passion to work wisely, creatively, and effectively for the betterment of humankind.</p>
       </div>
@@ -854,11 +854,31 @@
 
 <!-- GOOGLE MAP DIVIDER -->
 
-<div id="map">
+<!-- <div id="map"> -->
   <!-- <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3877.438596336944!2d82.68543246271457!3d26.15194262180384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1454345758444" width="1400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-<iframe class="border" src="./img/Capture.jpg" scrolling="no">
-  </iframe>
-</div>
+<!-- <iframe class="border" src="./img/Capture.jpg" scrolling="no">
+  </iframe> -->
+  <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 26.1525057, lng: 82.6849633};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyB0GH4GH806eX4wE4J0PWhMnxGotN47ems
+&callback=initMap">
+    </script>
+
+<!-- </div> -->
 
 <!-- GOOGLE MAP DIVIDER END -->
 
